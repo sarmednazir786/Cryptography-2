@@ -25,7 +25,7 @@ non_matching_characters = [char for char in string if not re.match(regex_pattern
 non_matching_string = ''.join(non_matching_characters)
 print(non_matching_string)
 ```
-We find this **ᎥժτʜêěɴɑɢᎻėᎥᏚᚱᏞ** which would look like this in english **idTHeeNaGHeiSRL**. We then use this password to decrypt the text and find the flag.
+We find this **ᎥժτʜêěɴɑɢᎻėᎥᏚᚱᏞᏞ** which would look like this in english **idTHeeNaGHeiSRLL**. We then use this secret and as the passage explains specifically about ECB 128bits, we use this cipher mode and keysize to decrypt the text.
 
 ........
 
