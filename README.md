@@ -3,7 +3,7 @@
 * difficulty: Medium
 * category: Cryptography
 * author: Sarmed
-* flags: Flag{Good_Work}
+* flags: Flag{congrats}
 
 ## Description:
 This is a medium difficulty lab that requires a keen eye for finding the flag that is encrypted using cryptographic algorithm. 
