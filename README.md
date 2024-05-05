@@ -15,7 +15,17 @@ Read the Importance of Cryptography carefully.
 With the given challenge, I was able to learn how to use python to automate a repititive task and understanding modern day crytographic algorithm. 
 
 ## Solution: 
-There is a 
+There are 2 files in this repository, the encrypted text one and the other one containing a passage on _Importance of Cryptography._ When we read the passage we notice 2 things, firstly, the passage contains some special symbols in place of letters and, secondly, the second paragraph is about AES 256. It's safe to assume that the text is encrypted in AES 256 but for decryption we require a password. We then proceed to extract all the special letters in the passage, we can do this through multiple ways, I'll show it through the python script using regex.
+
+```python
+import regex as re
+string = #paste_passage_here
+regex_pattern = r'[a-zA-Z0-9-,.;!\' ]'
+non_matching_characters = [char for char in string if not re.match(regex_pattern, char)]
+non_matching_string = ''.join(non_matching_characters)
+print(non_matching_string)
+```
+We find this **ᎥժτʜêěɴɑɢᎻėᎥᏚᚱᏞ** which would look like this in english **idTHeeNaGHeiSRL**. We then use this password to decrypt the text and find the flag.
 ........
 
 
