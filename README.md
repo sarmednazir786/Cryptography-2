@@ -26,6 +26,7 @@ non_matching_string = ''.join(non_matching_characters)
 print(non_matching_string)
 ```
 We find this **ᎥժτʜêěɴɑɢᎻėᎥᏚᚱᏞ** which would look like this in english **idTHeeNaGHeiSRL**. We then use this password to decrypt the text and find the flag.
+
 ........
 
 
